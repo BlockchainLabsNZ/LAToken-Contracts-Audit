@@ -3,6 +3,7 @@ pragma solidity ^0.4.15;
 import "./base-token/LATToken.sol";
 
 contract ExchangeContract {
+using SafeMath for uint256;
 
 	address public founder;
 	uint256 public prevCourse;
